@@ -19,7 +19,7 @@ $(document).ready(function () {
 
         // lengthMenu: １ページに表示させる件数のリスト
         // https://datatables.net/reference/option/lengthMenu
-        lengthMenu: [[10, 20, 50, -1], [10, 20, 50, "全件"]],
+        lengthMenu: [[10, 20, 50, -1], [10, 20, 50, "All"]],
 
         // pageLength: pageLengthの初期値
         // https://datatables.net/reference/option/pageLength
@@ -30,14 +30,14 @@ $(document).ready(function () {
         // 日本語版ソース:https://github.com/DataTables/Plugins/blob/master/i18n/Japanese.lang
         language: {
             "thousands": ",",
-            "sProcessing": "処理中...",
-            "sLengthMenu": "_MENU_ 件",
-            "sZeroRecords": "データはありません。",
-            "sInfo": " _TOTAL_ 件中 _START_ ～ _END_ を表示",
-            "sInfoEmpty": "データ無し",
-            "sInfoFiltered": "（全 _MAX_ 件より抽出）",
+            "sProcessing": "Processing...",
+            "sLengthMenu": "_MENU_ count",
+            "sZeroRecords": "no data",
+            "sInfo": "_START_ ～ _END_ Show from _TOTAL_ ",
+            "sInfoEmpty": "empty",
+            "sInfoFiltered": "From Total _MAX_ data）",
             "sInfoPostFix": "",
-            "sSearch": "検索:",
+            "sSearch": "Search:",
             "sUrl": "",
             "oPaginate": {
                 "sFirst": "<<",
@@ -87,23 +87,24 @@ $(document).ready(function () {
             },
             {
                 // 2列目
-                title: "都道府県",
+                title: "Province",
             },
             {
                 // 3列目
-                title: "自治体名",
+                title: "Municipality",
             },
             {
                 // 4列目
-                title: "ふりがな",
+                title: "Furigana",
+                visible: false,
             },
             {
                 // 5列目
-                title: "郵便番号",
+                title: "Zipcode",
             },
             {
                 // 6列目
-                title: "住所",
+                title: "Address",
                 // googleマップへのリンク
                 // http://www.shurey.com/html/googlemaps.html
                 render: function (data, type, row) {
@@ -112,7 +113,7 @@ $(document).ready(function () {
             },
             {
                 // 7列目
-                title: "電話番号",
+                title: "Phone",
                 // ハイパーリンク追加のサンプル
                 render: function (data) {
                     let telno = data.replace(/\-/g, '');
@@ -121,7 +122,7 @@ $(document).ready(function () {
             },
             {
                 // 8列目
-                title: "コード",
+                title: "Code",
             },
         ],
     });
@@ -168,7 +169,7 @@ $(document).ready(function () {
     $('.report').on('click', function () {
 
         if (selected.length == 0) {
-            alert('先にデータを選択してください。');
+            alert('먼저 데이터를 선택하세요');
             return false;
         }
 

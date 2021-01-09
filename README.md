@@ -1,22 +1,22 @@
 # django-datatables-view-sample
 
-[django-datatables-view](https://pypi.org/project/django-datatables-view/)を実際に動かして試せるサンプルアプリです。
+[django-datatables-view](https://pypi.org/project/django-datatables-view/)This is a sample application that you can actually move and try.
 
-解説：https://qiita.com/okoppe8/items/002aee6fdb03e9eadc92
+Explanation:https://qiita.com/okoppe8/items/002aee6fdb03e9eadc92
 
-# 使い方
+# How to use
 
-１．事前にpython(3.5以上)をインストールする。
+１．Install python (3.5 or above) in advance.
 
-２．gitでプロジェクトをダウンロードする
+２．Download the project with git
 
 ```
 git clone https://github.com/okoppe8/django-datatables-view-sample.git
 ```
 
-※ gitがない場合は左上の「Clone or Download」→ 「Download ZIP」でもOK
+※ If you don't have git, you can also use "Clone or Download" → "Download ZIP" on the upper left.
 
-３．ターミナルよりセットアップコマンドを実行する
+３．Execute the setup command from the terminal
 
 windows
 
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
-４．開発用サービスを立ち上げてブラウザからURLを開く
+４．Launch the development service and open the URL from your browser
 
 windows
 
