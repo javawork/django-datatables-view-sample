@@ -11,7 +11,7 @@
 ２．Download the project with git
 
 ```
-git clone https://github.com/okoppe8/django-datatables-view-sample.git
+git clone https://github.com/javawork/django-datatables-view-sample.git
 ```
 
 ※ If you don't have git, you can also use "Clone or Download" → "Download ZIP" on the upper left.
