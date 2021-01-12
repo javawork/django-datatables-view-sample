@@ -26,6 +26,7 @@ python -m venv env
 env\Scripts\activate
 pip install -r requirements.txt
 manage.py migrate
+manage.py loaddata item
 ```
 
 MacOS/Linux
@@ -36,6 +37,7 @@ python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
 python manage.py migrate
+python manage.py loaddata item
 ```
 
 ４．Launch the development service and open the URL from your browser

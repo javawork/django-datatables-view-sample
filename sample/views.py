@@ -29,7 +29,6 @@ class ItemsJsonView(BaseDatatableView):
     'twop',
     'twopa',
     'twopp',
-    'efgp',
     'ft',
     'fta',
     'ftp',

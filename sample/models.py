@@ -84,11 +84,6 @@ class Item(models.Model):
         max_length=8,
     )
 
-    efgp = models.CharField(
-        verbose_name='efgp',
-        max_length=8,
-    )
-
     ft = models.CharField(
         verbose_name='ft',
         max_length=8,

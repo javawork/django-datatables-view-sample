@@ -31,7 +31,6 @@ class Migration(migrations.Migration):
                 ('twop', models.CharField(max_length=8)),
                 ('twopa', models.CharField(max_length=8)),
                 ('twopp', models.CharField(max_length=8)),
-                ('efgp', models.CharField(max_length=8)),
                 ('ft', models.CharField(max_length=8)),
                 ('fta', models.CharField(max_length=8)),
                 ('ftp', models.CharField(max_length=8)),
