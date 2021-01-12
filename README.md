@@ -2,7 +2,7 @@
 
 [django-datatables-view](https://pypi.org/project/django-datatables-view/)This is a sample application that you can actually move and try.
 
-Explanation:https://qiita.com/okoppe8/items/002aee6fdb03e9eadc92
+![Alt text](doc/nba_player_sample.png?raw=true "NBA Player Sample")
 
 # How to use
 
