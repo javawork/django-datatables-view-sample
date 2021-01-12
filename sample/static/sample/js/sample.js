@@ -86,43 +86,141 @@ $(document).ready(function () {
                 },
             },
             {
-                // 2列目
-                title: "Province",
+                title: "Name",
+                visible: true,
             },
             {
-                // 3列目
-                title: "Municipality",
+                title: "Position",
+                visible: true,
             },
             {
-                // 4列目
-                title: "Furigana",
+                title: "Age",
                 visible: false,
+                searchable: false,
             },
             {
-                // 5列目
-                title: "Zipcode",
+                title: "Team",
+                visible: true,
             },
             {
-                // 6列目
-                title: "Address",
-                // googleマップへのリンク
-                // http://www.shurey.com/html/googlemaps.html
-                render: function (data, type, row) {
-                    return '<a target="_blank" href="https://maps.google.co.jp/maps?q=' + row[1] + data + '">' + data + '</a>';
-                },
+                title: "G",
+                visible: false,
+                searchable: false,
             },
             {
-                // 7列目
-                title: "Phone",
-                // ハイパーリンク追加のサンプル
-                render: function (data) {
-                    let telno = data.replace(/\-/g, '');
-                    return '<a href="tel:' + telno + '">' + data + '</a>';
-                },
+                title: "GS",
+                visible: false,
+                searchable: false,
             },
             {
-                // 8列目
-                title: "Code",
+                title: "MP",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "FG",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "FGA",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "FG%",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "3P",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "3PA",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "3P%",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "2P",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "2PA",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "2P%",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "FT",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "FTA",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "FT%",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "ORB",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "DRB",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "TRB",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "AST",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "STL",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "BLK",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "TOV",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "PF",
+                visible: false,
+                searchable: false,
+            },
+            {
+                title: "PTS",
+                visible: false,
+                searchable: false,
             },
         ],
     });
@@ -132,6 +230,10 @@ $(document).ready(function () {
     // サンプルコードを元に選択処理を自作する。
     // https://datatables.net/examples/server_side/select_rows.html
     $('#datatable tbody').on('click', 'tr', function () {
+
+        selected = [];
+        $('#datatable tr').removeClass('selected');
+        $('#selected').html(selected.join(','))
 
         let id = $(this).attr('data-id');
         let index = $.inArray(id, selected);
@@ -148,6 +250,37 @@ $(document).ready(function () {
             $(this).removeClass('selected');
         }
         $('#selected').html(selected.join(','));
+
+        var rows = table.rows('.selected').data()[0];
+        $("#proptable tbody").empty()
+        $("#proptable tbody").append(`<tr><th scope='row'>Name</th><td>${rows[1]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>Position</th><td>${rows[2]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>Age</th><td>${rows[3]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>Team</th><td>${rows[4]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>Game</th><td>${rows[5]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>GS</th><td>${rows[6]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>MP</th><td>${rows[7]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>FG</th><td>${rows[8]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>FGA</th><td>${rows[9]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>FG%</th><td>${rows[10]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>3P</th><td>${rows[11]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>3PA</th><td>${rows[12]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>3P%</th><td>${rows[13]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>2P</th><td>${rows[14]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>2PA</th><td>${rows[15]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>2P%</th><td>${rows[16]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>FT</th><td>${rows[17]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>FTA</th><td>${rows[18]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>FT%</th><td>${rows[19]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>ORB</th><td>${rows[20]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>DRB</th><td>${rows[21]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>TRB</th><td>${rows[22]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>AST</th><td>${rows[23]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>STL</th><td>${rows[24]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>BLK</th><td>${rows[25]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>TOV</th><td>${rows[26]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>PF</th><td>${rows[27]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>PTS</th><td>${rows[28]}</td></tr>`);
     });
 
     // サンプル：クリックしたレコードのデータを取得

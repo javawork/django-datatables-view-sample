@@ -12,7 +12,37 @@ class ItemsJsonView(BaseDatatableView):
     # モデルの指定
     model = Item
     # フィールドの指定
-    columns = ['id', 'pref_name', 'name', 'furigana', 'zipcode', 'address', 'tel', 'code']
+    columns = ['id', 
+    'name', 
+    'pos',
+    'age',
+    'tm',
+    'g',
+    'gs',
+    'mp',
+    'fg',
+    'fga',
+    'fgp',
+    'threep',
+    'threepa',
+    'threepp',
+    'twop',
+    'twopa',
+    'twopp',
+    'efgp',
+    'ft',
+    'fta',
+    'ftp',
+    'orb',
+    'drb',
+    'trb',
+    'ast',
+    'stl',
+    'blk',
+    'tov',
+    'pf',
+    'pts'
+    ]
 
     # 検索方法の指定：部分一致
     def get_filter_method(self):

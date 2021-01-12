@@ -10,8 +10,8 @@ from .models import Item
 @admin.register(Item)
 class ItemAdmin(admin.ModelAdmin):
     ordering = ('id',)
-    list_display = ('code', 'name', 'pref_name')
+    list_display = ('name', 'pos', 'tm')
 
     class Meta:
-        verbose_name = '自治体データ'
-        verbose_name_plural = '自治体データ'
+        verbose_name = 'nba'
+        verbose_name_plural = 'nba'
