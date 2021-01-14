@@ -257,15 +257,20 @@ $(document).ready(function () {
         $("#proptable tbody").append(`<tr><th scope='row'>Position</th><td>${rows[2]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>Age</th><td>${rows[3]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>Team</th><td>${rows[4]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>PTS</th><td>${rows[28]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>TRB</th><td>${rows[22]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>AST</th><td>${rows[23]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>STL</th><td>${rows[24]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>BLK</th><td>${rows[25]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>FG%</th><td>${rows[10]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>3P%</th><td>${rows[13]}</td></tr>`);
+        $("#proptable tbody").append(`<tr><th scope='row'>3P</th><td>${rows[11]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>Game</th><td>${rows[5]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>GS</th><td>${rows[6]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>MP</th><td>${rows[7]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>FG</th><td>${rows[8]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>FGA</th><td>${rows[9]}</td></tr>`);
-        $("#proptable tbody").append(`<tr><th scope='row'>FG%</th><td>${rows[10]}</td></tr>`);
-        $("#proptable tbody").append(`<tr><th scope='row'>3P</th><td>${rows[11]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>3PA</th><td>${rows[12]}</td></tr>`);
-        $("#proptable tbody").append(`<tr><th scope='row'>3P%</th><td>${rows[13]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>2P</th><td>${rows[14]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>2PA</th><td>${rows[15]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>2P%</th><td>${rows[16]}</td></tr>`);
@@ -274,13 +279,8 @@ $(document).ready(function () {
         $("#proptable tbody").append(`<tr><th scope='row'>FT%</th><td>${rows[19]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>ORB</th><td>${rows[20]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>DRB</th><td>${rows[21]}</td></tr>`);
-        $("#proptable tbody").append(`<tr><th scope='row'>TRB</th><td>${rows[22]}</td></tr>`);
-        $("#proptable tbody").append(`<tr><th scope='row'>AST</th><td>${rows[23]}</td></tr>`);
-        $("#proptable tbody").append(`<tr><th scope='row'>STL</th><td>${rows[24]}</td></tr>`);
-        $("#proptable tbody").append(`<tr><th scope='row'>BLK</th><td>${rows[25]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>TOV</th><td>${rows[26]}</td></tr>`);
         $("#proptable tbody").append(`<tr><th scope='row'>PF</th><td>${rows[27]}</td></tr>`);
-        $("#proptable tbody").append(`<tr><th scope='row'>PTS</th><td>${rows[28]}</td></tr>`);
     });
 
     // サンプル：クリックしたレコードのデータを取得
