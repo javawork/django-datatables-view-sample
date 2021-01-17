@@ -91,7 +91,7 @@ $(document).ready(function () {
             },
             {
                 title: "Position",
-                visible: true,
+                visible: false,
             },
             {
                 title: "Age",
@@ -100,7 +100,7 @@ $(document).ready(function () {
             },
             {
                 title: "Team",
-                visible: true,
+                visible: false,
             },
             {
                 title: "G",
@@ -189,22 +189,22 @@ $(document).ready(function () {
             },
             {
                 title: "TRB",
-                visible: false,
+                visible: true,
                 searchable: false,
             },
             {
                 title: "AST",
-                visible: false,
+                visible: true,
                 searchable: false,
             },
             {
                 title: "STL",
-                visible: false,
+                visible: true,
                 searchable: false,
             },
             {
                 title: "BLK",
-                visible: false,
+                visible: true,
                 searchable: false,
             },
             {
@@ -219,7 +219,7 @@ $(document).ready(function () {
             },
             {
                 title: "PTS",
-                visible: false,
+                visible: true,
                 searchable: false,
             },
         ],

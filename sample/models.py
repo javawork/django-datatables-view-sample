@@ -14,9 +14,8 @@ class Item(models.Model):
         max_length=8,
     )
 
-    age = models.CharField(
+    age = models.FloatField(
         verbose_name='age',
-        max_length=8,
     )
 
     tm = models.CharField(
@@ -24,124 +23,100 @@ class Item(models.Model):
         max_length=8,
     )
 
-    g = models.CharField(
+    g = models.IntegerField(
         verbose_name='g',
-        max_length=8,
     )
 
-    gs = models.CharField(
+    gs = models.IntegerField(
         verbose_name='gs',
-        max_length=8,
     )
 
-    mp = models.CharField(
+    mp = models.FloatField(
         verbose_name='mp',
-        max_length=8,
     )
 
-    fg = models.CharField(
+    fg = models.FloatField(
         verbose_name='fg',
-        max_length=8,
     )
 
-    fga = models.CharField(
+    fga = models.FloatField(
         verbose_name='fga',
-        max_length=8,
     )
 
-    fgp = models.CharField(
+    fgp = models.FloatField(
         verbose_name='fgp',
-        max_length=8,
     )
 
-    threep = models.CharField(
+    threep = models.FloatField(
         verbose_name='threep',
-        max_length=8,
     )
 
-    threepa = models.CharField(
+    threepa = models.FloatField(
         verbose_name='threepa',
-        max_length=8,
     )
 
-    threepp = models.CharField(
+    threepp = models.FloatField(
         verbose_name='threepp',
-        max_length=8,
     )
 
-    twop = models.CharField(
+    twop = models.FloatField(
         verbose_name='twop',
-        max_length=8,
     )
 
-    twopa = models.CharField(
+    twopa = models.FloatField(
         verbose_name='twopa',
-        max_length=8,
     )
 
-    twopp = models.CharField(
+    twopp = models.FloatField(
         verbose_name='twopp',
-        max_length=8,
     )
 
-    ft = models.CharField(
+    ft = models.FloatField(
         verbose_name='ft',
-        max_length=8,
     )
 
-    fta = models.CharField(
+    fta = models.FloatField(
         verbose_name='fta',
-        max_length=8,
     )
 
-    ftp = models.CharField(
+    ftp = models.FloatField(
         verbose_name='ftp',
-        max_length=8,
     )
 
-    orb = models.CharField(
+    orb = models.FloatField(
         verbose_name='orb',
-        max_length=8,
     )
 
-    drb = models.CharField(
+    drb = models.FloatField(
         verbose_name='drb',
-        max_length=8,
     )
 
-    trb = models.CharField(
+    trb = models.FloatField(
         verbose_name='trb',
-        max_length=8,
     )
 
-    ast = models.CharField(
+    ast = models.FloatField(
         verbose_name='ast',
-        max_length=8,
     )
 
-    stl = models.CharField(
+    stl = models.FloatField(
         verbose_name='stl',
-        max_length=8,
     )
 
-    blk = models.CharField(
+    blk = models.FloatField(
         verbose_name='blk',
-        max_length=8,
     )
 
-    tov = models.CharField(
+    tov = models.FloatField(
         verbose_name='tov',
-        max_length=8,
     )
 
-    pf = models.CharField(
+    pf = models.FloatField(
         verbose_name='pf',
-        max_length=8,
     )
 
-    pts = models.CharField(
+    pts = models.FloatField(
         verbose_name='pts',
-        max_length=8,
     )
 
 
