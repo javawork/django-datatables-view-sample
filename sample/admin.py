@@ -10,7 +10,7 @@ from .models import Item
 @admin.register(Item)
 class ItemAdmin(admin.ModelAdmin):
     ordering = ('id',)
-    list_display = ('name', 'pos', 'tm')
+    list_display = ('name', 'pos', 'tm', 'pts','trb','ast','stl','blk')
 
     class Meta:
         verbose_name = 'nba'
